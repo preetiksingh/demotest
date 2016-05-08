@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Preeti | RecruiterBox</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="chat-form">
+    <ul class="nav nav-tabs" role="tablist">
+     <li class="close-btn"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li> 
+     <li role="presentation">
+      <a href="#home" aria-controls="home" role="tab" data-toggle="tab"><span><i class="fa fa-envelope-o" aria-hidden="true"></i>
+       Mail Us</span></a>
+     </li>
+     <li role="presentation" class="active">
+      <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><span><i class="fa fa-search" aria-hidden="true"></i>
+       FAQ</span></a>
+     </li>
+     <li role="presentation">
+      <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span><i class="fa fa-comment" aria-hidden="true"></i>
+       Live Chat</span></a>
+     </li> 
+   </ul>
+
+   <!-- Tab panes -->
+   <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="home">
+
+      <form>
+        <fieldset>
+          <div role="alert" class="alert alert-success alert-dismissible fade in" id="alert-message">
+            <p><i class="fa fa-check" aria-hidden="true"></i> Message Sent! Thanks for reaching out! Someone from our team will get back to you soon.</p>
+          </div>
+          <div id="to">
+            <input type="text" id="name" name="name" class="form-control input-block-level" value ="support@recruiterbox.com" disabled>
+          </div>
+          <input type="text" id="email" name="email" class="form-control input-block-level" placeholder="Subject"> 
+          <textarea rows="3" id="description" name="description" class="form-control input-block-level" placeholder="Message..."></textarea>
+          <a href="#" class="pull-left"><i class="fa fa-paperclip" aria-hidden="true"></i>
+           Attach File</a>
+           <button type="button" class="btn btn-warning pull-right" id="submit-btn">Send Mail</button>
+         </fieldset>
+       </form>
+
+     </div>
+     <div role="tabpanel" class="tab-pane fade in active" id="profile">
+      <div class="col-md-4 col-sm-4 col-xs-4 text-center border-right">
+        <h3>Prefer email instead?</h3>
+        <a href="#" class="write-us"><i class="fa fa-envelope-o"></i>Write to us</a>
+        <p>We are super quick in responding to your queries.</p>
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-8 right-section">
+        <div class="search">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <input class="form-control" type="text" placeholder="What can we help you with? Start typing your question...">
+        </div>
+        <div class="row">
+
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+
+            <a href="#" class="folder">
+              <i class="fa fa-folder" aria-hidden="true"></i>
+              <h5>Sharing Openings</h5>
+            </a>
+
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+
+            <a href="#" class="thumb-tack">
+              <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+              <h5>Managing Openings</h5>
+            </a>
+
+          </div>  
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+
+            <a href="#" class="file-text">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+              <h5>Managing Candidates</h5>
+            </a>
+
+          </div>  
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+
+            <a href="#" class="user-icon">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <h5>Account Management</h5>
+            </a>
+
+          </div>  
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+
+            <a href="#" class="folder">
+              <i class="fa fa-folder" aria-hidden="true"></i>
+              <h5>Sourcing Candidates</h5>
+            </a>
+
+          </div>  
+          <div class="col-md-4 col-sm-4 col-xs-6 text-center">
+
+            <a href="#" class="folder">
+              <i class="fa fa-folder" aria-hidden="true"></i>
+              <h5>Reporting</h5>
+            </a>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="messages"><h1>Chat plugin goes here</h1></div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.10.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
